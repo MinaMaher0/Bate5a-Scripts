@@ -1,5 +1,5 @@
 resource "aws_instance" "master_node" {
-  ami           = var.instance_ami
+  ami           = var.master_instance_type
   instance_type = var.instance_type
   key_name  = "${aws_key_pair.me5a-key.key_name}"
   security_groups = ["${aws_security_group.master_security_group.id}"]
@@ -14,7 +14,7 @@ resource "aws_instance" "master_node" {
 }
 
 resource "aws_instance" "worker_node1" {
-  ami           = var.instance_ami
+  ami           = var.worker_instance_type
   instance_type = var.instance_type
   key_name  = "${aws_key_pair.me5a-key.key_name}"
   security_groups = ["${aws_security_group.worker_security_group.id}"]
@@ -29,7 +29,7 @@ resource "aws_instance" "worker_node1" {
 }
 
 resource "aws_instance" "worker_node2" {
-  ami           = var.instance_ami
+  ami           = var.worker_instance_type
   instance_type = var.instance_type
   key_name  = "${aws_key_pair.me5a-key.key_name}"
   security_groups = ["${aws_security_group.worker_security_group.id}"]

@@ -19,6 +19,8 @@ echo $worker_ip_2 >> Inventory
 mv Inventory ../ansible
 cd ../ansible
 
+sleep 1m
+
 ansible-playbook -i Inventory playbook.yml
 
 cd ..
