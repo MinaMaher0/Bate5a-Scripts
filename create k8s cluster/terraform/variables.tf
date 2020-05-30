@@ -18,7 +18,9 @@ variable "instance_ami" {
   default = "ami-085925f297f89fce1"
 }
 
-variable "instance_type" {
+variable "master_instance_type" {
   type = string
-  default = "t2.medium"
+}
+variable "worker_instance_type" {
+  type = string
 }
