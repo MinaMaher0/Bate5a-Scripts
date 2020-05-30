@@ -24,3 +24,11 @@ variable "master_instance_type" {
 variable "worker_instance_type" {
   type = string
 }
+
+variable "firstAZ" {
+  type = string
+}
+
+variable "secondAZ" {
+  type = string
+}

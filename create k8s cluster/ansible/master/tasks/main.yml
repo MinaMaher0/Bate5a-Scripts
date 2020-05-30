@@ -3,7 +3,7 @@
 
 
 - name: Initialize the cluster
-  command: sudo kubeadm init --pod-network-cidr=172.31.32.0/20
+  command: kubeadm init --pod-network-cidr=10.244.0.0/16
 
 - name:  Set up local kubeconfig
   file:

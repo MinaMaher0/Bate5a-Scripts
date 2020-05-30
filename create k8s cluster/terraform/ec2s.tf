@@ -34,7 +34,7 @@ resource "aws_instance" "worker_node2" {
   key_name  = "${aws_key_pair.me5a-key.key_name}"
   security_groups = ["${aws_security_group.worker_security_group.id}"]
   associate_public_ip_address = true
-  subnet_id = "${aws_subnet.public_subnet2.id}"
+  subnet_id = "${aws_subnet.public_subnet1.id}"
   root_block_device {
     volume_size = 15
   } 

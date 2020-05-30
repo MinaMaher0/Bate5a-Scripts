@@ -10,5 +10,8 @@ master_instance_type="t3a.small"
 
 worker_instance_type="t2.micro"
 
+firstAZ="us-east-1a"
+
+secondAZ="us-east-1b"
 
 
