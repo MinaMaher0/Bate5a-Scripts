@@ -6,7 +6,7 @@ script creates k8s cluster (1 mster, 2 worker nodes) using Terraform and AWS, an
 
 1 - aws account
 
-  make sure `~/.aws/credentials` conatin your aws credentials under profile `default`
+  make sure `~/.aws/credentials` contain your aws credentials under profile `default`
 
   like this :
   ```
